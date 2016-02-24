@@ -1,9 +1,10 @@
 (function(){
 	"use strict";
-
+	
 	
 
 	if (!localStorage.getItem('counter')) {
+		$('#counter').text('reload page and counter will start');
 		localStorage.setItem('counter', 50);
 	} else {
 		counter();
