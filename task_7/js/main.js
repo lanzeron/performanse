@@ -1,10 +1,12 @@
 (function(){
 	"use strict";
 
-	if (localStorage.getItem('counter')) {
-		counter();
+	
+
+	if (!localStorage.getItem('counter')) {
+		localStorage.setItem('counter', 50);
 	} else {
-	localStorage.setItem('counter', 50);
+		counter();
 	}
 
 	function counter() {
