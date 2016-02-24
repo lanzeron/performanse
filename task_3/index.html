@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            page with bugs
+        </title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/style.css"/>
+         <script src="jQuery/jquery-1.12.0.min.js">
+        </script>
+        <script src="js/main.js">
+        </script>
+       
+    </head>
+    <body>
+        <p>На цій сторінці допущені наступні помилки:<br/>
+        <ul>
+        	<li>Css, Scripts, jQuery все приєдано в head документу, що сильно погіршить швидкість завантаження сторінки </li>
+        	<li>jQuery приєднаний локально, що теж програє в швидкості</li>
+        	<li>Картинки використовуються з роширенням png, як в css файлі так і в html</li>
+        	<li>присутні теги img з пустими src що робить додаткові запити на сервер, і таким чином погіршує швидкодію</li>
+        	<li>пусті поля alt в тегах img</li>
+        	<li>запит Ajax з невірною url адресою</li>
+        </ul>
+        </p>
+        <div>
+            <div id="image">
+                fd
+            </div>
+            <img src="" alt=""/>
+            <img src="" alt=""/>
+        </div>
+        <div>
+            <img src="images/maky.png" alt=""/>
+        </div>
+        <div id="ajax">
+        </div>
+    </body>
+</html>
